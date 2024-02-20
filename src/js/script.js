@@ -369,7 +369,7 @@ if (filterInput) {
         }
     });
 }
-const requestUrl = 'http://localhost:3000/src/js/fox.json';
+const requestUrl = '/src/js/fox.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestUrl);
 request.responseType = 'json';
