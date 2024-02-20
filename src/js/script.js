@@ -168,7 +168,12 @@ const addToCart = jsonObj => {
         tosetPurchases(currentObj);
     }
     localStorage.setItem('purchases', JSON.stringify(cookies));
+
+    // Select the shopping bag icon
+    const shoppingBagIcon = document.querySelector('.icons__link--cart i');
+    shoppingBagIcon.style.color = '#cc5520'; // Change color of the shopping bag icon
 }
+
 const showPurchases = () => {
     for (let cookie of cookies) {
         const purchase = document.createElement('div');
