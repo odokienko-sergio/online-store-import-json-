@@ -1,0 +1,60 @@
+.content {
+  padding: 28px 0 6px;
+
+  @media (min-width: $screen-xl) {
+    padding: 110px 0 69px;
+  }
+
+  .content-block {
+    padding-bottom: 32px;
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      gap: 0 50px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-xl) {
+        font-size: $fs15;
+        margin-bottom: 31px;
+      }
+    }
+
+    &__text {
+      line-height: 30px;
+      color: $color13;
+      letter-spacing: 1px;
+      font-size: $fs4;
+      margin-bottom: 13px;
+      font-family: $font1;
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__image {
+      height: fit-content;
+      margin-left: -$padding1;
+      max-width: calc(100% + $padding1 * 2);
+
+      @media (min-width: $screen-xl) {
+        margin-left: 0;
+      }
+    }
+
+    &:nth-child(2n) {
+      @media (min-width: $screen-xl) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .ites {
+        @media (min-width: $screen-md) {
+          width: 100%;
+        }
+    }
+}

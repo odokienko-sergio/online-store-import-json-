@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $background1;
+
+  z-index: 2;
+}
+
+h1 {
+  @extend %font1;
+  font-size: $fs1;
+  color: $color2;
+  line-height: 65px;
+
+  @media (min-width: $screen-xl) {
+    font-size: $fs6;
+    line-height: 90px;
+  }
+}
+
+h2 {
+  @extend %font1;
+  font-size: $fs16;
+  color: $color1;
+}
+
+h3 {
+  font-family: $font1;
+  font-weight: 600;
+  color: $color6;
+}
+
+h5 {
+  @extend %font2;
+}
+
+h6 {
+  font-family: $font1;
+  font-weight: 600;
+  color: $color2;
+  font-size: $fs2;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+input::placeholder {
+  opacity: 1;
+}
+
+.container {
+  padding: 0 $padding1;
+
+  @media (min-width: $screen-xl) {
+    max-width: 1170px;
+    padding: 0;
+  }
+}
+
+.row {
+  margin: 0;
+
+  & > * {
+    padding: 0;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
+  }
+}

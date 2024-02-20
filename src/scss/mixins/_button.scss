@@ -1,0 +1,9 @@
+@mixin button($backgroundColor: $color5) {
+  font-family: $font1;
+  background-color: $backgroundColor;
+  font-weight: 500;
+  font-size: $fs4;
+  color: $color2;
+  text-align: center;
+  width: 100%;
+}

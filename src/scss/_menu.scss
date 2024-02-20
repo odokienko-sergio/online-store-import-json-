@@ -1,0 +1,17 @@
+.navbar {
+  .navbar-toggler, .navbar-toggler:focus {
+    border: none;
+  }
+
+  &__item {
+    font-family: $font1;
+    font-weight: 600;
+    font-size: $fs5;
+    color: $color2;
+    text-transform: uppercase;
+
+    &--active {
+      color: $color5;
+    }
+  }
+}

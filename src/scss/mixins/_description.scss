@@ -1,0 +1,30 @@
+@mixin description($fontSize, $fontSizeMd, $margin: 0) {
+  &__description {
+    font-family: $font1;
+    display: flex;
+    justify-content: space-between;
+    color: $color1;
+    font-size: $fontSize;
+    margin: $margin;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fontSizeMd;
+    }
+
+    & > * {
+      letter-spacing: 0.8px;
+
+      @media (min-width: $screen-xl) {
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__price {
+    font-weight: 600;
+  }
+}

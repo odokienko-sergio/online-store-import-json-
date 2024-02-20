@@ -1,0 +1,38 @@
+.banner {
+  color: $color2;
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  padding: 141px 0 15px;
+
+  @media (min-width: $screen-xl) {
+    padding: 235px 0 685px 2px;
+  }
+
+  &__row {
+    margin-left: -1px;
+  }
+
+  &__content {
+    width: 541px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 41px;
+    }
+  }
+
+  &__text {
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: $font1;
+    font-size: $fs2;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs4;
+      line-height: 30px;
+    }
+  }
+}

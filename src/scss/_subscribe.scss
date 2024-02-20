@@ -1,0 +1,88 @@
+.subscribe {
+  background-color: $color7;
+  font-family: $font1;
+  margin-bottom: 27px;
+  text-align: center;
+  padding: 20px 0 9px;
+
+  @media (min-width:  $screen-md) {
+    margin-bottom: 0;
+    padding: 111px 0 158px;
+  }
+
+  &__row {
+    & > * {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    color: $color6;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: $fs4;
+
+    @media (min-width: $screen-md) {
+      letter-spacing: 1.6px;
+      margin-bottom: 16px;
+      font-size: $fs8;
+    }
+  }
+
+  &__text {
+    margin: 0 0 27px -1px;
+    color: $color1;
+    line-height: 21px;
+    font-weight: 400;
+    font-size: $fs3;
+    letter-spacing: 0.7px;
+    width: fit-content;
+
+    @media (min-width: $screen-md) {
+      font-weight: 400;
+      line-height: 27px;
+      font-size: $fs7;
+      letter-spacing: 0.9px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin: 0 155px 40px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      width: 755px;
+    }
+  }
+
+  &__input {
+    font-weight: 500;
+    color: $color9;
+    border: 1px solid $color8;
+    font-size: $fs4;
+    background-color: $color7;
+    margin-bottom: 20px;
+    padding: 19px 13px;
+
+    @media (min-width: $screen-md) {
+      width: 71.6%;
+      margin-bottom: 0;
+      padding: 19px 29px;
+    }
+  }
+
+  &__button {
+    @include button($color1);
+    padding: 20px 0;
+
+    @media (min-width: $screen-md) {
+      width: 28.4%;
+    }
+  }
+}

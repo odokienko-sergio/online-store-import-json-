@@ -1,0 +1,30 @@
+.page_title {
+  padding: 47px 0 0;
+  background-color: $color12;
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    padding: 52px 0 42px;
+  }
+
+  &__row {
+    @media (min-width: $screen-md) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.8px;
+    margin: 0 0 15px 2px;
+    color: $color4;
+    font-size: $fs10;
+    font-family: $font1;
+    font-weight: 600;
+  }
+}
+
+.all_ites {
+  .page_title {
+    background-color: #f9f9f9;
+  }
+}

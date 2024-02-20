@@ -1,0 +1,286 @@
+.all_ites {
+  .content {
+    @media (min-width: $screen-xl) {
+      padding: 23px 0 69px;
+    }
+
+    .filter {
+      @media (min-width: $screen-xl) {
+        width: 200px;
+        margin-right: 69px;
+      }
+
+      &__list {
+        margin-bottom: 39px;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 14px $gap1;
+
+        @media (min-width: $screen-xl) {
+          gap: 0;
+          flex-direction: column;
+        }
+      }
+
+      &__item {
+        flex: 1 1 calc((100% / 2) - $gap1);
+
+        @media (min-width: $screen-xl) {
+          margin-top: -1px;
+          order: 2;
+          flex: 1 1 auto;
+          border-top: 1px solid $color7;
+          border-right: none;
+          border-bottom: 1px solid $color7;
+          border-left: none;
+        }
+
+        &--all {
+          @media (min-width: $screen-xl) {
+            order: 1;
+            border-top: none;
+          }
+        }
+
+        &:last-child {
+          @media (min-width: $screen-xl) {
+            border-bottom: none;
+          }
+        }
+      }
+
+      &__link {
+        color: $color14;
+        font-family: $font3;
+        font-size: $fs15;
+        border: 1px solid $color14;
+        border-radius: 7px;
+        background-color: $color2;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+        letter-spacing: 0.4px;
+
+        @media (min-width: $screen-xl) {
+          font-family: $font1;
+          font-weight: 500;
+          color: $color1;
+          font-size: $fs2;
+          border: none;
+          border-radius: 0;
+          text-align: left;
+          padding: 10px 0 10px 31px;
+        }
+
+        &--active {
+          color: $color2;
+          background-color: $color5;
+
+          @media (min-width: $screen-xl) {
+            color: inherit;
+            background-color: inherit;
+          }
+        }
+
+        &:hover {
+          @media (min-width: $screen-xl) {
+            color: $color2;
+            background-color: $color5;
+          }
+        }
+      }
+
+      &__input {
+        margin-bottom: 26px;
+        border: 1px solid rgba(red($color1), green($color1), blue($color1), 0.2);
+        font-family: $font1;
+        font-weight: 200;
+        font-size: $fs2;
+        padding: 16px 28px 11px;
+        letter-spacing: 0.8px;
+        color: $color1;
+        width: 100%;
+
+        @media (min-width: $screen-xl) {
+          margin-bottom: 55px;
+          padding: 16px 37px 13px;
+        }
+      }
+
+      &__text {
+        letter-spacing: 0.7px;
+        font-family: $font1;
+        font-weight: 400;
+        font-size: $fs3;
+        color: $color1;
+
+        @media (min-width: $screen-xl) {
+          margin-bottom: 5px;
+        }
+      }
+
+      &__value {
+        -webkit-appearance: none !important;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $color15;
+        height: 10px;
+        cursor: pointer;
+        margin: 18px 0 27px;
+        border-radius: 18px;
+
+        &::-moz-range-thumb, &::-webkit-slider-thumb {
+          border: none;
+          width: 34px;
+          height: 34px;
+          background-color: $color5;
+          border-radius: 30px;
+          box-shadow: 0px 4px 4px 0px #00000040;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none !important;
+        }
+
+        &::-ms-fill-lower {
+          background-color: $color5;
+        }
+
+        &::-ms-fill-upper {
+          background-color: $color2;
+        }
+      }
+
+      &__total {
+        color: $color1;
+        letter-spacing: 1px;
+        font-family: $font1;
+        font-weight: 700;
+        text-align: center;
+        font-size: $fs4;
+        margin-bottom: 35px;
+      }
+    }
+
+    .ites {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $screen-xl) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 7px $gap2;
+        flex: 1 1 calc((100% / 2) - $gap2);
+      }
+
+      .fox {
+        margin: 0 auto 33px;
+        width: max-content;
+        position: relative;
+
+        @media (min-width: $screen-xl) {
+          margin: 0 0 33px;
+        }
+
+        &__image {
+          max-width: 100%;
+          margin-bottom: 9px;
+        }
+
+        @include description($fs2, 20px);
+
+        &__stars {
+          display: flex;
+
+          svg {
+            width: 69px;
+            height: auto;
+
+            @media (min-width: $screen-xl) {
+              width: 82px;
+            }
+          }
+        }
+
+        &__tag {
+          font-weight: 400;
+          color: $color4;
+          letter-spacing: 0.8px;
+          margin: 0 2px;
+
+          @media (min-width: $screen-xl) {
+            font-size: $fs2;
+            margin: 0;
+          }
+        }
+
+        &__toadd {
+          position: absolute;
+          top: 17px;
+          right: 17px;
+        }
+
+        &__link {
+          font-family: $font1;
+          font-weight: 400;
+          font-size: $fs17;
+          text-align: center;
+          background-color: $color5;
+          color: $color2;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 9px 10px 4px 11px;
+
+          @media (min-width: $screen-xl) {
+            padding: 12px 16px 9px;
+          }
+
+          &:hover {
+            background-color: $color2;
+            color: $color5;
+          }
+        }
+
+        &__background {
+          position: absolute;
+          display: none;
+          width: 100%;
+          top: 0;
+          height: 100%;
+          background: rgba(red($color2), green($color2), blue($color2), 0.5);
+        }
+
+        &__plus {
+          font-weight: 600;
+          font-size: $fs18;
+          display: block;
+          line-height: 17px;
+        }
+
+        &:nth-child(2n) {
+          display: none;
+
+          @media (min-width: $screen-xl) {
+            display: block;
+          }
+        }
+      }
+
+      &__button {
+        @include button();
+        margin: 7px 0 11px;
+        padding: 20px 0;
+
+        @media (min-width: $screen-xl) {
+          width: 598px;
+          margin: 27px auto 11px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.bag {
+  position: absolute;
+  background-color: $color2;
+  text-align: center;
+  padding: 37px 12px 56px 10px;
+  width: 100%;
+
+  top: 0;
+
+  right: 0;
+  z-index: 3;
+  display: none;
+
+  @media (min-width: $screen-xl) {
+    bottom: 0;
+    width: 445px;
+    padding: 43px 36px 11px;
+  }
+
+  &__close {
+    display: inline-block;
+  }
+
+  .page_title {
+    background-color: $color2;
+    padding: 58px 0 45px;
+
+    @media (min-width: $screen-xl) {
+      padding: 28px 0 68px;
+    }
+
+    &__text {
+      margin-bottom: -6px;
+    }
+
+    &__title {
+      margin-left: -2px;
+    }
+  }
+
+  &__purchases {
+    margin: 0 10px;
+
+    @media (min-width: $screen-xl) {
+      margin: 0;
+    }
+  }
+
+  .purchase {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media (min-width: $screen-xl) {
+      justify-content: space-between;
+    }
+
+    &__card {
+      margin-right: 20px;
+    }
+
+    &__image {
+      width: 204px;
+      border-radius: 7px;
+      margin-bottom: 5px;
+    }
+
+    @include description($fs3, $fs3, 0 7px 0 10px);
+
+    &__control {
+      font-family: $font3;
+    }
+
+    &__set_count {
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__minus {
+      font-size: 27px;
+      color: $color16;
+    }
+
+    &__count {
+      font-size: 19px;
+      color: $color2;
+      background-color: $color5;
+      margin: 0 10px;
+      padding: 6px 26px;
+      border-radius: 20px;
+    }
+
+    &__plus {
+      font-size: 19px;
+      color: $color16;
+    }
+
+    &__remove {
+      font-size: 11px;
+      color: $color16;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      @media (min-width: $screen-xl) {
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+
+      svg {
+        @media (min-width: $screen-xl) {
+          width: 23px;
+          margin: 0 0 -2px 6px;
+        }
+      }
+    }
+  }
+
+  &__calculation {
+    @media (min-width: $screen-xl) {
+      position: absolute;
+      bottom: 66px;
+      right: 46px;
+      left: 46px;
+    }
+  }
+
+  &__total {
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 55px;
+    font-family: $font2;
+    letter-spacing: 2px;
+    margin-bottom: 41px;
+  }
+
+  &__dollar {
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  &__button {
+    @include button();
+
+    padding: 20px 0;
+  }
+}

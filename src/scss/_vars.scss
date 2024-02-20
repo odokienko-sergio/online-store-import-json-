@@ -1,0 +1,53 @@
+$font1: 'Montserrat', sans-serif;
+$font2: 'Playfair Display', serif;
+$font3: 'Roboto', sans-serif;
+$fs1: 60px;
+$fs2: 16px;
+$fs3: 14px;
+$fs4: 20px;
+$fs5: 25px;
+$fs6: 80px;
+$fs7: 18px;
+$fs8: 32px;
+$fs9: 12px;
+$fs10: 15px;
+$fs15: 24px;
+$fs16: 50px;
+$fs17: 11px;
+$fs18: 33px;
+$color1: #000000;
+$color2: #ffffff;
+$color3: #f4f4f4;
+$color4: #969595;
+$color5: #cc5520;
+$color6: #201616;
+$color7: #efefef;
+$color8: #9a9494;
+$color9: #9d9d9d;
+$color10: #191919;
+$color11: #fefefe;
+$color12: #e6e6e6;
+$color13: #484848;
+$color14: #ff3d00;
+$color15: #a0a0a0;
+$color16: #8c8c8c;
+$color17: #f9f9f9;
+$padding1: 10px;
+$gap1: 19px;
+$gap2: 59px;
+$background1: rgba(red($color1), green($color1), blue($color1), 0.45);
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+%font1 {
+  font-family: $font2;
+  font-weight: 700;
+}
+%font2 {
+  @extend %font1;
+  line-height: 34px;
+  letter-spacing: 0.8px;
+  font-size: $fs4;
+  color: $color1;
+}

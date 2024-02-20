@@ -1,0 +1,118 @@
+.footer {
+  padding: 77px 0 15px;
+  color: $color2;
+  font-size: $fs3;
+  font-family: $font1;
+  font-weight: 400;
+  background-color: $color10;
+  text-align: center;
+
+  &__container {
+    padding: 0 49px;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      width: 22%;
+    }
+
+      @media (min-width: $screen-xl) {
+        width: 276px;
+      }
+
+    &__logo {
+      margin-bottom: 19px;
+    }
+
+    &__title {
+      text-align: left;
+      margin-bottom: 15px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__text {
+      line-height: 21px;
+      letter-spacing: 0.6px;
+      margin: 0 2px 10px 4px;
+
+      @media (min-width: $screen-md) {
+        margin: 0 0 10px 1px;
+        letter-spacing: 0.7px;
+      }
+    }
+
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 50px;
+    }
+
+    &__link {
+      text-align: left;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+
+    @media (min-width: $screen-md) {
+      gap: 0;
+      width: 78%;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 0 81px;
+      margin: 6px 0 0 auto;
+      width: auto;
+    }
+
+    .footer-column {
+      @media (min-width: $screen-md) {
+        width: auto;
+      }
+    }
+  }
+
+  .icons {
+    margin: 2px 0 43px;
+
+    &__link {
+      display: inline-block;
+      margin: 0 6px;
+
+      &:first-child {
+        @media (min-width: $screen-md) {
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-family: $font1;
+    font-weight: 700;
+    font-size: $fs9;
+
+    @media (min-width: $screen-md) {
+      margin: 35px auto 33px;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $background1;
+
+  @media (min-width: $screen-xl) {
+    padding: 38px 0 36px;
+  }
+
+  &__row {
+    padding: 4px 10px 7px;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @media (min-width: $screen-xl) {
+      padding: 0;
+    }
+
+    & > * {
+      width: auto;
+      padding: 0;
+
+      &:first-child, &:last-child {
+        flex: 1;
+
+        @media (min-width: $screen-md) {
+          flex: unset;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+    @media (min-width: $screen-md) {
+      order: 2;
+      margin: 7px 0 0 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-left: -48px;
+    }
+
+    &__container-fluid {
+      padding: 0;
+    }
+
+    &__navbar-toggler {
+      border: none;
+
+      &:focus {
+        border: none;
+      }
+    }
+
+    &__collapse {
+      &.collapsed {
+        display: block;
+      }
+    }
+
+    &__list {
+      @media (min-width: $screen-md) {
+        gap: 0 30px;
+      }
+    }
+
+    &__item {
+      font-family: $font1;
+      font-weight: 600;
+      font-size: $fs5;
+      color: $color2;
+      text-transform: uppercase;
+
+      @media (min-width: $screen-md) {
+        font-size: $fs3;
+        letter-spacing: 0.8px;
+      }
+
+      &--active {
+        color: $color5;
+      }
+    }
+  }
+
+  .logo {
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
+
+    svg {
+      width: 121px;
+
+      @media (min-width: $screen-xl) {
+        width: auto;
+      }
+    }
+  }
+
+  .icons {
+    text-align: right;
+    margin-top: 1px;
+
+    @media (min-width: $screen-md) {
+      order: 3;
+    }
+    &__link {
+      margin-left: 20px;
+    }
+  }
+}
+
+.our_history, .all_ites {
+  .header {
+    @media (min-width: $screen-md) {
+      position: static;
+      background-color: transparent;
+      padding: 39px 0 41px;
+    }
+
+    .navbar {
+      @media (min-width: $screen-xl) {
+        margin: 6px 0 0 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-left: -43px;
+      }
+
+      &__item {
+        @media (min-width: $screen-md) {
+          color: $color1;
+        }
+
+        &--active {
+          @media (min-width: $screen-md) {
+            color: $color5;
+          }
+        }
+      }
+    }
+
+    .icons {
+      @media (min-width: $screen-md) {
+        display: flex;
+
+        &__link {
+          @media (min-width: $screen-md) {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}

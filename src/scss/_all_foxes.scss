@@ -1,0 +1,153 @@
+.foxes_content {
+  background-color: $color2;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 106px;
+  }
+
+  &__left {
+    @media (min-width: $screen-md) {
+      margin-right: 2.08%;
+      width: 47.98%;
+    }
+
+    .fox {
+      &:nth-child(1) {
+        .fox__image {
+          width: 77px;
+          top: 5px;
+          right: 35px;
+
+          @media (min-width: $screen-xl) {
+            width: fit-content;
+            right: 55px;
+            top: -2px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        @media (min-width: $screen-md) {
+          flex-direction: row-reverse;
+        }
+
+        .fox__image {
+          width: 97px;
+          top: 0;
+          right: 23px;
+
+          @media (min-width: $screen-md) {
+            left: 1px;
+            top: -10px;
+          }
+
+          @media (min-width: $screen-xl) {
+            left: 64px;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    @media (min-width: $screen-md) {
+      width: 49.94%;
+    }
+
+    .fox {
+      &:nth-child(1) {
+        .fox__content {
+          margin-bottom: 160px;
+
+          @media (min-width: $screen-md) {
+            margin-bottom: 161px;
+          }
+
+          @media (min-width: $screen-xl) {
+            margin-bottom: 337px;
+          }
+        }
+        .fox__image {
+          width: 232px;
+          top: 25px;
+          right: 1px;
+
+          @media (min-width: $screen-xl) {
+            width: fit-content;
+            right: 33px;
+            top: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  .fox {
+    background-color: $color3;
+    margin-top: 27px;
+    padding: 20px 19px 29px;
+    display: flex;
+    position: relative;
+
+    @media (min-width: $screen-xl) {
+      margin: 0 0 32px 0;
+      padding: 0;
+    }
+
+    &__link {
+      @extend %font2;
+      display: block;
+
+      @media (min-width: $screen-xl) {
+        font-size: $fs15;
+        letter-spacing: 1px;
+      }
+
+      &--hashtag {
+        color: $color4;
+        font-size: $fs3;
+        line-height: 20px;
+        font-family: $font1;
+        font-weight: 600;
+
+        margin-bottom: 2px;
+
+        @media (min-width: $screen-xl) {
+          font-size: $fs7;
+
+
+
+
+          margin-bottom: 14px;
+        }
+      }
+    }
+
+    &__content {
+      @media (min-width: $screen-xl) {
+        margin: 33px 32px 85px;
+      }
+    }
+
+    &__image {
+      position: absolute;
+
+      @media (min-width: $screen-xl) {
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
+
+  &__button {
+    @include button();
+    margin: 27px 0 27px -1px;
+    padding: 20px 0;
+    max-width: 598px;
+
+    @media (min-width: $screen-md) {
+      margin: 38px auto 56px;
+    }
+  }
+}
